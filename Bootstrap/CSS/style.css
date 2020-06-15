@@ -1,0 +1,42 @@
+body {
+  font: 20px Ariel, sans-serif;
+}
+
+.navbar {
+  background-color: hsl(62, 85%, 21%);
+}
+
+.who-weare {
+  background-color: blueviolet;
+  color: white;
+}
+
+.margin {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+h1 {
+  margin-bottom: 50px;
+}
+
+.partiners {
+  background-color: green;
+  padding-top: 20px;
+}
+
+.services {
+  background-color: brown;
+  padding-top: 20px;
+}
+
+.back {
+  background-color: rgb(169, 242, 243);
+  color: white;
+  padding: 20px;
+}
+.bg-footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
