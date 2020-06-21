@@ -1,7 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles.css';
+import App from "./App";
 
+ReactDOM.render(<App />, document.getElementById("app"));
+
+
+/*
 function sum(a, b) {
   return a + b  
 }
@@ -29,3 +34,4 @@ const element2 = <h1>Olá pessoal! ;D</h1>
 
 const rootElement = document.getElementById("root")
 ReactDOM.render(<App />, rootElement)
+*/
