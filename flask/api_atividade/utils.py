@@ -1,7 +1,7 @@
 from models import Pessoas
 
 def insere_pessoas():
-  pessoa = Pessoas(nome='Thiago', idade='34')
+  pessoa = Pessoas(nome='Diogo', idade='38')
   print(pessoa)
   pessoa.save()
 
@@ -23,7 +23,7 @@ def exclui_pessoa():
 
 
 if __name__ == "__main__":
-  #insere_pessoas()
+  insere_pessoas()
   consulta_pessoas()
   #altera_pessoa()
   #exclui_pessoa()

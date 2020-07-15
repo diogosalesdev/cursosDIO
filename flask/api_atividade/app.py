@@ -48,14 +48,15 @@ class Pessoa(Resource):
 class ListaPessoas(Resource):
   def get(self):
     pessoas = Pessoas.query.all()
+    dados = request.json
     response = [{'id':i.id, 'nome':i.nome, 'idade':i.idade} for i in pessoas]
-    atividade = Atividades(nome=dados['nome'], pessoa=pessoa)
+    atividade = Atividades(nome=dados['nome'], pessoa=dados['pessoa'])
     atividade.save()
     return response
   
   def post(self):
     dados = request.json
-    pessoa = Pessoas.query.filter_by(nome-dados['pessoa']).first()
+    pessoa = Pessoas.query.filter_by(nome=dados['pessoa']).first()
     pessoa.save()
     response = {
         'id' : pessoa.id,
